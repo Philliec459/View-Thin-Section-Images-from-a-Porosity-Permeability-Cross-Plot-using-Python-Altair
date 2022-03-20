@@ -12,6 +12,8 @@ This clastic example is a combination of a few samples where we had porosity, pe
 ![Geolog_Image](Excel.png)
 
 2) Launch Jupyter Notebook and run in one go all the cells to obtain the following output:
+      - Hover over each sample to observe the image of the thin section.
+      - Select data points to see the RCA data for the select samples.
 
 ![Geolog_Image](sqrt_k_phi.gif)
 
