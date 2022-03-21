@@ -19,7 +19,7 @@ This clastic example is a combination of a few samples where we had porosity, pe
 
 In this GitHub repository we have placed our image files in a ./data subdirectory to reduce the clutter and better organize our data.
 
-# We have now also integrated Capillary Pressure data using the SCAL Thomeer Capillary Pressure parameters to calculate our Pc data:
+# We have also integrated Capillary Pressure data using the SCAL Thomeer Capillary Pressure parameters to calculate our Pc data:
 You will find these plots at the end of the Jupyter Notebook.
 
 ![Geolog_Image](k-phi_with_Pc.gif)
