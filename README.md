@@ -11,7 +11,7 @@ The workflow is simple. Our Jupyter Notebook reads in the Excel file as shown be
 
 ![Geolog_Image](Excel.png)
 
-and then we prooduce the following output. To observe the representative Thin Section, we hover over each sample to observe the image of the thin section. If we select data points from the cross plot we see the RCA data for the select samples.
+and then we prooduce the following output. To observe the representative Thin Section, we hover over each sample to observe the image of the thin section. If we select data points from the cross plot, then we see the RCA data for the select samples.
 
 ![Geolog_Image](sqrt_k_phi.gif)
 
