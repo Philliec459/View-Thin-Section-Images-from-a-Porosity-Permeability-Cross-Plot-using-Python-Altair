@@ -19,4 +19,6 @@ This clastic example is a combination of a few samples where we had porosity, pe
 
 In this GitHub repository we have placed our image files in a ./data subdirectory to reduce the clutter and better organize our data.
 
-The next phase of this GitHub repository is to integrate the High Pressure Mercury Inject (HPMI) data too. Stay tuned in to observe how the Capillary Pressure curves vary with the texture of the rock. 
+# We have now also integrated Capillary Pressure data using the SCAL Thomeer Capillary Pressue parameters to calculate our Pc data:
+
+![Geolog_Image](k-phi_with_Pc.gif)
