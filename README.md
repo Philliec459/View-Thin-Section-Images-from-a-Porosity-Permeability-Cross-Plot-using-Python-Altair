@@ -5,15 +5,13 @@ Many of us make a living at characterizing reservoirs and yet sometimes we can g
 
 There is an added bonus in that we can also select the samples from the cross plot and a table to the right of the cross plot shows us the RCA data associated with the selected samples. We are searching for a method to actually show the thumbnails of the thin section image in the same table of selected data too. More to come. 
 
-This clastic example is a combination of a few samples where we had porosity, permeability and thin section photomicrographs. The workflow is simple. We read in an Excel file as shown below that links the name of the thin section images file to our RCA data, and then we let python do the rest. 
+This clastic example is a combination of a few samples where we had porosity, permeability and thin section photomicrographs. 
 
-1) Read an Excel file as shown below to create a pandas DataFrame in python:
+The workflow is simple. Our Jupyter Notebook reads in the Excel file as shown below to create a panda DataFrame in python: 
 
 ![Geolog_Image](Excel.png)
 
-2) Launch Jupyter Notebook and run in one go all the cells to obtain the following output:
-      - Hover over each sample to observe the image of the thin section.
-      - Select data points to see the RCA data for the select samples.
+and then we prooduce the following output. To observe the representative Thin Section, we hover over each sample to observe the image of the thin section. If we select data points from the cross plot we see the RCA data for the select samples.
 
 ![Geolog_Image](sqrt_k_phi.gif)
 
