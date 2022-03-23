@@ -22,4 +22,4 @@ In this GitHub repository we have placed our image files in a ./data subdirector
 # We have also integrated Capillary Pressure data using the SCAL Thomeer Capillary Pressure parameters to calculate our Pc data:
 **You will find these plots at the end of the Jupyter Notebook. You can also observe the thin section from the Pc curves too.**
 
-![Geolog_Image](k-phi_with_Pc.gif)
+![Geolog_Image](k-phi_with_Pc_ts.gif)
