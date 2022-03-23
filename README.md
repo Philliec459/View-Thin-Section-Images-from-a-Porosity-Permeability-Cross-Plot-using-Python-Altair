@@ -1,6 +1,8 @@
 # View-Thin-Section-Images-from-a-Porosity-Permeability-Cross-Plot-using-Python-Altair
 We have used some very simple python code to view thin sections from a porosity vs. permeability cross plot using python's Altair and Pane.
 
+>## Please note that the thin section images while hovering over the poro-perm sample in the cross plot only show the thin sections in Jupyter Notebook and not JupyterLab. 
+
 Many of us make a living at characterizing reservoirs and yet sometimes we can get separated from the rock itself. Do we truly understand the textural differences in the reservoir? Do we know what is controlling reservoir quality? In the past we have used Spotfire to integrate our Routine Core Analysis (RCA) with the SCAL, but we have found new ways to use python to accomplish the same task. We are using Altair and Vega Panes for our python coding. 
 
 There is an added bonus in that we can also select the samples from the cross plot and a table to the right of the cross plot shows us the RCA data associated with the selected samples. We are searching for a method to actually show the thumbnails of the thin section image in the same table of selected data too. More to come. 
