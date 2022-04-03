@@ -25,3 +25,7 @@ In this GitHub repository we have placed our image files in a ./data subdirector
 **You will find these plots at the end of the Jupyter Notebook. You can also observe the thin section from the Pc curves too. This same type of display is also available in our Geolog project too.**
 
 ![Geolog_Image](k-phi_with_Pc_ts.gif)
+
+# We have added a Geolog project with python Loglans to perform the entire process as shown above in Geolog too. We are using new Thin Section image rendering code as we used for our JuptyerLab Notebook. The rendering is native to Jupyer Notebook, so this new code is more universal along all python platforms.
+
+![Geolog_Image](k-phi_with_Pc_ts_Geolog.gif)
