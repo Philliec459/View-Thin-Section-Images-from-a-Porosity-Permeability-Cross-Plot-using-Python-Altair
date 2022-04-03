@@ -4,7 +4,7 @@ We have used some very simple python code to view thin sections from a porosity 
 >
 >## In addition, we have added a Geolog Project with a python loglans to this repository. In one loglan we are accessing the Thin Sections via AWS while using Geolog as url files stored on AWS. In the other loglan we render the Thin Section ./plots/.png images directly and then display them with Altair and use Panel to display the select samples from the Routine Core Analysis data. This new technique overcomes the Thin Section rendering issues associated with Jupyter Lab, .py python files and even Geolog in Altair.
 >
->We have added this new technique to a JupyterLab Notebook for you to try too. 
+>**We have added this new technique to a JupyterLab Notebook for you to try too.** 
 
 Many of us make a living at characterizing reservoirs and yet sometimes we can get separated from the rock itself. Do we truly understand the textural differences in the reservoir? Do we know what is controlling reservoir quality? In the past we have used Spotfire to integrate our Routine Core Analysis (RCA) with the SCAL, but we have found new ways to use python to accomplish the same task. We are using Altair and Vega Panels for our python coding. 
 
