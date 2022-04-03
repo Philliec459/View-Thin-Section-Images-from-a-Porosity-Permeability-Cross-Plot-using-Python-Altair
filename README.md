@@ -27,6 +27,11 @@ In this GitHub repository we have placed our image files in a ./data subdirector
 
 ![Geolog_Image](k-phi_with_Pc_ts.gif)
 
-# We have added a Geolog project with python Loglans to perform the entire process as shown above in Geolog too. We are using new Thin Section image rendering code as we used for our JuptyerLab Notebook. The rendering is native to Jupyter Notebook, so this new code is more universal along all the python platforms.
+# We have added a Geolog project with python Loglans to perform the entire process of interrogating our Routine Core Analysis and Capillary Pressure data viewing the representative Thin Section for each sample as shown below in Geolog. We are now using new Thin Section image rendering code as we used for our new JuptyerLab Notebook. This rendering is native to Jupyter Notebook, so this new code is more universal along all the python platforms including JupyterLab and Geolog. 
 
 ![Geolog_Image](k-phi_with_Pc_ts_Geolog.gif)
+
+The Jupyter Notebook, JupyterLab Notebook and Geolog project can all be downloaded from this GitHub repository:
+
+
+
