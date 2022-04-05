@@ -2,7 +2,7 @@
 We have used some very simple python code to view thin sections from a porosity vs. permeability cross plot using python's Altair and Panel.
 
 >
->## In addition, we have added a Geolog Project with a python loglans to this repository. In one loglan we are accessing the Thin Sections via AWS as url files stored on AWS in Geolog. In the other loglan we render the Thin Section ./plots/.png images directly and then display them with Altair and use Panel to display the select sample text data from the Routine Core Analysis data. This new technique overcomes the Thin Section rendering issues associated with Jupyter Lab, .py python files and even rendering these images in Geolog using Altair.
+>## In addition, we have added a Geolog Project with a python loglans to this repository. In one loglan we are accessing the Thin Sections via AWS as url files stored on AWS using Geolog. In the other loglan we render the Thin Section ./plots/.png images directly and then display them with Altair and use Panel to display the select sample text data from the Routine Core Analysis data. This new technique overcomes the Thin Section rendering issues associated with Jupyter Lab, .py python files and even rendering these images in Geolog using Altair.
 >
 >**We have added this new technique to a JupyterLab Notebook for you to try too.** 
 
