@@ -14,22 +14,22 @@ This clastic example is a combination of a few samples where we had porosity, pe
 
 The workflow is simple. Our Jupyter Notebook reads in the Excel file as shown below to create a panda DataFrame in python: 
 
-![Geolog_Image](Excel.png)
+>![Geolog_Image](Excel.png)
 
 and then we produce the following output. To observe the representative Thin Section, we hover over each sample to observe the image of the thin section. If we select data points from the cross plot, then we see the RCA data for the select samples.
 
-![Geolog_Image](sqrt_k_phi.gif)
+>![Geolog_Image](sqrt_k_phi.gif)
 
 In this GitHub repository we have placed our image files in a ./data subdirectory to reduce the clutter and better organize our data.
 
 # We have also integrated Capillary Pressure data using the SCAL Thomeer Capillary Pressure parameters to calculate our Pc data:
 **You will find these plots at the end of the Jupyter Notebook. You can also observe the thin section from the Pc curves too. This same type of display is also available in our Geolog project too.**
 
-![Geolog_Image](k-phi_with_Pc_ts.gif)
+>![Geolog_Image](k-phi_with_Pc_ts.gif)
 
 # We have added a Geolog project with python Loglans to perform the entire process of interrogating our Routine Core Analysis and Capillary Pressure data viewing the representative Thin Section for each sample as shown below in Geolog. We are now using new Thin Section image rendering code as we used for our new JuptyerLab Notebook. This rendering is native to Jupyter Notebook, so this new code is more universal along all the python platforms including JupyterLab and Geolog. 
 
-![Geolog_Image](k-phi_with_Pc_ts_Geolog.gif)
+>![Geolog_Image](k-phi_with_Pc_ts_Geolog.gif)
 
 The Jupyter Notebook, JupyterLab Notebook and Geolog project can all be downloaded from this GitHub repository:
 
