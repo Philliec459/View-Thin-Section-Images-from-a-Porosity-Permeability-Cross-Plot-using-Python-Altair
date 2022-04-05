@@ -22,12 +22,12 @@ and then we produce the following output. To observe the representative Thin Sec
 
 In this GitHub repository we have placed our image files in a ./data subdirectory to reduce the clutter and better organize our data.
 
-# We have also integrated Capillary Pressure data using the SCAL Thomeer Capillary Pressure parameters to calculate our Pc data:
+### We have also integrated Capillary Pressure data using the SCAL Thomeer Capillary Pressure parameters to calculate our Pc data:
 **You will find these plots at the end of the Jupyter Notebook. You can also observe the thin section from the Pc curves too. This same type of display is also available in our Geolog project too.**
 
 >![Geolog_Image](k-phi_with_Pc_ts.gif)
 
-# We have added a Geolog project with python Loglans to perform the entire process of interrogating our Routine Core Analysis and Capillary Pressure data viewing the representative Thin Section for each sample as shown below in Geolog. We are now using new Thin Section image rendering code as we used for our new JuptyerLab Notebook. This rendering is native to Jupyter Notebook, so this new code is more universal along all the python platforms including JupyterLab and Geolog. 
+### We have added a Geolog project with python Loglans to perform the entire process of interrogating our Routine Core Analysis and Capillary Pressure data viewing the representative Thin Section for each sample as shown below in Geolog. We are now using new Thin Section image rendering code as we used for our new JuptyerLab Notebook. This rendering is native to Jupyter Notebook, so this new code is more universal along all the python platforms including JupyterLab and Geolog. 
 
 >![Geolog_Image](k-phi_with_Pc_ts_Geolog.gif)
 
