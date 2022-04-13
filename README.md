@@ -31,7 +31,13 @@ In this GitHub repository we have placed our image files in a ./data subdirector
 
 >![Geolog_Image](k-phi_with_Pc_ts_Geolog.gif)
 
-The Jupyter Notebook, JupyterLab Notebook and Geolog project can all be downloaded from this GitHub repository:
+We can push this a little further. Since each thin section is registered in poro-perm space, then we can use kNN to query our well core calibrated porosity and permeability at each level in our well and assign a representative thin section at each level to create a thin section image log as shown below. 
+
+For this example, we wrote a python loglan in Geolog to perform the kNN process to identify the representative thin sections, and this program will be available in our GitHub site. This program writes out the name of each thin section to be applied at each depth level in the well, and then we used Geolog’s tp_image_from_photo to load each thin section image into an array called photo for display in Geolog. Again, with your robust core datasets from your reservoirs on your wells, this will be more meaningful than this simple example. 
+
+>![Geolog_Image](ts_image_log2.gif)
+
+The Jupyter Notebook, JupyterLab Notebook and Geolog project can all be downloaded from this GitHub repository
 
 
 
