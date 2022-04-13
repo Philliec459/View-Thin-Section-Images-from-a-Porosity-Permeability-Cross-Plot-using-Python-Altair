@@ -37,7 +37,7 @@ For this example, we wrote a python loglan in Geolog to perform the kNN process 
 
 >![Geolog_Image](ts_image_log2.gif)
 
-The Jupyter Notebook, JupyterLab Notebook and Geolog project can all be downloaded from this GitHub repository
+The Jupyter Notebook, JupyterLab Notebook and Geolog project can all be downloaded from this GitHub repository.
 
 
 
