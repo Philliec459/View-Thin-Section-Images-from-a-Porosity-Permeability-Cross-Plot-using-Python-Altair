@@ -1,0 +1,17 @@
+# spec : 
+LANGUAGE = PYTHON
+MODE:  ARG:     VAR:     TYPE:         REPEAT: DEFAULT:                  VALIDATION: LOCATION: UNIT:    VISIBLE: TAB_LABEL: COMMENT=
+#====  ====     ====     =====         ======= ========                  =========== ========= =====    ======== ========== ========                                  
+INPUT  FILE_IN  file_in  FILE          ""      ""                        ""          ""        ""       TRUE     ""         "Input table (pipe)."
+INPUT  FILE_OUT file_out FILE          ""      ""                        ""          ""        ""       TRUE     ""         "Output table (pipe)."
+INPUT  SET_IN   set_in   REAL          ""      WS                        ""          PARAMETER ""       TRUE     ""         "Log Analysis Set"
+INPUT  SET_OUT  set_out  REAL          ""      IMAGE                     ""          PARAMETER ""       TRUE     ""         "Image Path Set"
+IN_OUT POR_MAX  por_max  NAME_REAL     ""      0.5                       ""          CONSTANT  V/V      FALSE    ""         "Max Porosity for Porosity Normalization"
+IN_OUT POR_MIN  por_min  NAME_REAL     ""      0.0                       ""          CONSTANT  V/V      FALSE    ""         "Min Porosity for Porosity Normalization"
+IN_OUT PERM_MAX perm_max NAME_REAL     ""      4                         ""          CONSTANT  MD       FALSE    ""         "Log10 Permeability Max"
+IN_OUT PERM_MIN perm_min NAME_REAL     ""      -4                        ""          CONSTANT  MD       FALSE    ""         "Log10 Permeability Min"
+INPUT  DEPTH    depth    NAME_REAL     ""      DEPTH                     ""          LOG       FEET     TRUE     ""         "Downhole depth"
+INPUT  PHIE     phie     NAME_REAL     ""      WS.PHIT                   ""          LOG       V/V      TRUE     ""         "Effective Porosity"
+INPUT  PERM     perm     NAME_REAL     ""      KNN_PERM_EST.PERM_EST_KNN ""          LOG       MD       TRUE     ""         "kNN Estimated Permeability"
+OUTPUT INVDIST  invdist  NAME_REAL     ""      INVDIST                   ""          LOG       ""       TRUE     ""         "Inverse Distance of selected Sample"
+OUTPUT IMAGE    image    NAME_ALPHA*48 ""      IMAGE                     ""          LOG       ALPHA*48 TRUE     ""         "Thin Section Image Label"

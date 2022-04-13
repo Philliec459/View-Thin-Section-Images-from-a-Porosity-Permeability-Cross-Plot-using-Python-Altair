@@ -1,0 +1,150 @@
+#!/usr/bin/env python3
+# python loglan
+
+
+# Imports
+import math
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+import pandas as pd
+import geolog
+import numpy as np
+
+from PIL import Image
+#from colorama import Fore, Style
+
+k=0
+
+# Load data from geolog
+while geolog.getrow():
+      
+    Por = phie
+    Perm = perm
+
+    # =============================================================================
+    # # ===========================================================================
+    # # #-------------------------------------------------------------------------- 
+    # # #                Read/Write Spreadsheet
+    # # #        Read in data which is Gathered Thin Section Data
+    # # #--------------------------------------------------------------------------
+    # # ===========================================================================
+    # =============================================================================
+    #read the file
+    file = r'./data/Clastic_TS_Altair_Geolog.xlsx'
+    CoreTSdata = pd.read_excel(file,index_col=False)
+    
+    
+    Index=CoreTSdata['Sample']
+    Porosity_TS=CoreTSdata['Porosity']
+    Permeability_TS=CoreTSdata['Permeability']
+    Path_TS=CoreTSdata['image']
+    
+    # =============================================================================
+    # # ===========================================================================
+    # # #--------------------------------------------------------------------------
+    # # #
+    # # #           This is the beginnin of Inverse Distance^2 
+    # # #             to select a representative Thin Section
+    # # #
+    # # #--------------------------------------------------------------------------
+    # # ===========================================================================
+    # =============================================================================
+    # lev = float(input("Enter level in well = "))
+    # for k in range(0,rows_data,1):
+    # for k in range(925,1645,1):
+    # TS_image = []
+    
+    por = (Por-por_min)/(por_max - por_min)
+    perm= (math.log10(Perm) - perm_min)/(perm_max - perm_min)
+
+
+    dist_inv = []
+    dist_phi = []
+    dist_lperm = []
+    TS = []
+
+    inv_dist_array = []
+
+    dist_inv_total = 0
+    Porosity_total = 0
+    Permeability_total = 0
+
+
+    dist_inv = []
+    dist_phi = []
+    dist_lperm = []
+    inv_dist_array2 = []
+    dist_inv_total=0
+    
+    #------------------------------------------------------------------------------ 
+    #          Display the Representative Thin Section
+    #------------------------------------------------------------------------------
+    
+    Porosity_norm_ts     = []
+    Permeability_norm_ts = []
+    
+    #this is the mapinv_reference_data being used using the mapinv Porosity and Permeability vs. por and perm
+    for i in range(0,len(CoreTSdata),1):
+    
+            Porosity_norm_ts.append((Porosity_TS[i] - por_min) / (por_max - por_min))
+            Permeability_norm_ts.append((math.log10(Permeability_TS[i]) - perm_min) / (perm_max - perm_min))
+    
+            #Euclidian Distance
+            dist_phi.append(   abs(por  - Porosity_norm_ts[i]    ))  
+            dist_lperm.append( abs(perm - Permeability_norm_ts[i]))
+            dist_inv.append( 1  /  math.sqrt(  dist_phi[i]**2 + dist_lperm[i]**2)  )    
+    
+            inv_dist_array2.append(dist_inv);  # add items
+       
+    a = np.array(inv_dist_array2) 
+    inv_dist_thresh = np.percentile(a, 99.999)
+        
+    #plt.figure(2)        
+    for p in range(0,len(CoreTSdata),1):        
+            if dist_inv[p] > inv_dist_thresh - 0.001 and dist_inv[p] > 0.001:
+                TS = Path_TS[p]
+                invdist = 1/dist_inv[p]
+    #            Por_TS = Porosity_TS[p]
+    #            Perm_TS = Permeability_TS[p]
+           
+    
+    #            print("     Reference Data: Porosity =",Porosity[p], ", Permeability =", Permeability[p],", Inv Dist '",dist_inv[i],TS)
+    #            print(Fore.GREEN +"     Porosity =",Porosity_TS[p], ", Permeability =", Permeability_TS[p])
+    #            print(Fore.GREEN +"     Inv Dist '",dist_inv[p],", TS Image =", Path_TS[p])    
+    #            img=mpimg.imread(TS)
+    #            imgplot = plt.imshow(img)
+    #            plt.show()
+    #        else:
+    #            TS = 'blank.PNG'
+    #            Por_TS = 0
+    #            Perm_TS = 0
+    #            img=mpimg.imread(TS)               
+
+    # ------------------------------------------------------------------------------
+    #           Console Plots turned off for now
+    # ------------------------------------------------------------------------------
+    image=TS
+    ####print()
+    print("Depth =", depth, "Por =", Por, "Perm =", Perm, "Inv Dist =", dist_inv[i], 'Thin Section =', image)
+    #img = mpimg.imread(TS)
+    ########imgplot = plt.imshow(img)
+    #######plt.show()
+
+  
+    # Store data into geolog
+    geolog.putrow()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
